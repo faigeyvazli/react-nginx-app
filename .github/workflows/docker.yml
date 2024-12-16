@@ -30,7 +30,7 @@ jobs:
         with:
           push: true
           tags: > 
-            ${{ secrets.DOCKERHUB_USERNAME }}/${{ needs.app-meta.outputs.name }}:${{ needs.app-meta.outputs.version }},
-            ${{ secrets.DOCKERHUB_USERNAME }}/${{ needs.app-meta.outputs.name }}:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.app-meta.outputs.name }}:${{ steps.app-meta.outputs.version }},
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ steps.app-meta.outputs.name }}:latest
           build-args: |
             APP_VERSION=${{ vars.APP_VERSION }}
