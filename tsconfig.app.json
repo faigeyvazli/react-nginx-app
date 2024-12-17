@@ -24,8 +24,12 @@
 
     /* Path alias */
     "paths": {
-      "@app/*": ["./src/*"]
-    }
+      "@app/*": ["./src/*"],
+      "@test/*": ["./test/*"]
+    },
+
+    /* Global types */
+    "types": ["vitest/globals"]
   },
-  "include": ["src"]
+  "include": ["src", "test"]
 }

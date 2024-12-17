@@ -6,6 +6,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@app': '/src',
+      '@test': '/test',
     },
   },
   plugins: [react()],
