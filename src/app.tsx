@@ -2,7 +2,7 @@ import './styles/reset.css';
 
 import { useState } from 'react';
 
-import { Button } from './components/button';
+import { Button } from '@app/components/button';
 
 export const App = () => {
   const [count, setCount] = useState(0);

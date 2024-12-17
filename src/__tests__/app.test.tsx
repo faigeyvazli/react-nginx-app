@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
 
-import { App } from './app.tsx';
+import { App } from '@app/app';
 
 describe('<App />', () => {
   it('renders correctly', () => {
