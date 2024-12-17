@@ -1,0 +1,37 @@
+.button {
+  // Reset --start
+  margin: 0;
+  border: none;
+  outline: none;
+  background: none;
+  border-radius: 2px;
+  // Reset --end
+
+  // Variants --start
+  &-default {
+    border: 1px solid black;
+  }
+
+  &-primary {
+    border: 1px solid cadetblue;
+  }
+
+  &-secondary {
+    border: 1px solid coral;
+  }
+  // Variants --end
+
+  // Sizes --start
+  &-small {
+    padding: 2px 4px;
+  }
+
+  &-normal {
+    padding: 4px 8px;
+  }
+
+  &-large {
+    padding: 6px 12px;
+  }
+  // Sizes --end
+}

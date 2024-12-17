@@ -1,4 +1,8 @@
+import './styles/reset.css';
+
 import { useState } from 'react';
+
+import { Button } from './components/button';
 
 export const App = () => {
   const [count, setCount] = useState(0);
@@ -6,7 +10,7 @@ export const App = () => {
   return (
     <div>
       <p>This is app</p>
-      <button onClick={() => setCount((prevState) => prevState + 1)}>Count: {count}</button>
+      <Button onClick={() => setCount((prevState) => prevState + 1)}>Count: {count}</Button>
       <p>Version: {import.meta.env.VITE_APP_VERSION}</p>
     </div>
   );
